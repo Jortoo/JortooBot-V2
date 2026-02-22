@@ -1,0 +1,8 @@
+name: Hugeboxes-Bot
+version: '1.0-SNAPSHOT'
+main: jortoo.hugeboxesBot.HugeboxesBot
+api-version: '1.21'
+commands:
+  donation:
+    permission: donation.message
+
