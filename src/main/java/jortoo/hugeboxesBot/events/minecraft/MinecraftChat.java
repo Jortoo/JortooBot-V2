@@ -1,6 +1,8 @@
-package jortoo.hugeboxesBot;
+package jortoo.hugeboxesBot.events.minecraft;
 
 import io.papermc.paper.event.player.AsyncChatEvent;
+import jortoo.hugeboxesBot.BotCreation;
+import jortoo.hugeboxesBot.HugeboxesBot;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.JDA;
 import net.kyori.adventure.text.minimessage.MiniMessage;

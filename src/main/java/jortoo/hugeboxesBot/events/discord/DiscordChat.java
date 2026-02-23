@@ -1,6 +1,8 @@
-package jortoo.hugeboxesBot;
+package jortoo.hugeboxesBot.events.discord;
 
 
+import jortoo.hugeboxesBot.BotCreation;
+import jortoo.hugeboxesBot.HugeboxesBot;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.kyori.adventure.text.Component;
@@ -27,7 +29,7 @@ public class DiscordChat extends ListenerAdapter {
         String user = event.getAuthor().getName();
 
         MiniMessage mm = MiniMessage.miniMessage();
-        Component mcMessage = mm.deserialize("<#5493F4><bold>DISCORD</bold> <white>" + user + " <dark_gray>▪ <gray>7" + message);
+        Component mcMessage = mm.deserialize("<#5493F4><bold>DISCORD</bold> <white>" + user + " <dark_gray>▪ <gray>" + message);
 
         Bukkit.getScheduler().runTask(HugeboxesBot.plugin, () -> { Bukkit.broadcast(mcMessage); });
 
