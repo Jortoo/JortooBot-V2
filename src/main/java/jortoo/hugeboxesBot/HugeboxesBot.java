@@ -1,10 +1,11 @@
 package jortoo.hugeboxesBot;
 
-import jortoo.hugeboxesBot.commands.DiscordCommand;
-import jortoo.hugeboxesBot.commands.DonationCommand;
+import jortoo.hugeboxesBot.commands.minecraft.DiscordCommand;
+import jortoo.hugeboxesBot.commands.minecraft.DonationCommand;
 import jortoo.hugeboxesBot.events.minecraft.MinecraftChat;
 import jortoo.hugeboxesBot.events.minecraft.PlayerJoin;
 import jortoo.hugeboxesBot.events.minecraft.PlayerLeave;
+import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import javax.security.auth.login.LoginException;
@@ -48,4 +49,14 @@ public final class HugeboxesBot extends JavaPlugin {
         //}
 
     }
+
+    public static void loadCommands() {
+        BotCreation.guild.updateCommands()
+                .addCommands(
+
+                        Commands.slash("status", "Shows server stats")
+
+                ).queue();
+    }
+
 }

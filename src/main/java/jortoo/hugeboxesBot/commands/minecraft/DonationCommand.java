@@ -1,4 +1,4 @@
-package jortoo.hugeboxesBot.commands;
+package jortoo.hugeboxesBot.commands.minecraft;
 
 import jortoo.hugeboxesBot.BotCreation;
 import jortoo.hugeboxesBot.HugeboxesBot;

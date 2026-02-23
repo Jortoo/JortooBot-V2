@@ -1,4 +1,4 @@
-package jortoo.hugeboxesBot.commands;
+package jortoo.hugeboxesBot.commands.minecraft;
 
 import jortoo.hugeboxesBot.BotCreation;
 import net.kyori.adventure.text.Component;
@@ -37,7 +37,7 @@ public class DiscordCommand implements CommandExecutor {
 
         player.sendMessage(finalMessage);
         player.playSound(player, Sound.BLOCK_CHEST_OPEN, 1, 1.5f);
-
         return true;
+
     }
 }
