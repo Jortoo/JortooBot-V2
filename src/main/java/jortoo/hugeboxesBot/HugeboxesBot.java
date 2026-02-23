@@ -2,6 +2,7 @@ package jortoo.hugeboxesBot;
 
 import jortoo.hugeboxesBot.commands.minecraft.DiscordCommand;
 import jortoo.hugeboxesBot.commands.minecraft.DonationCommand;
+import jortoo.hugeboxesBot.events.minecraft.DeathEvent;
 import jortoo.hugeboxesBot.events.minecraft.MinecraftChat;
 import jortoo.hugeboxesBot.events.minecraft.PlayerJoin;
 import jortoo.hugeboxesBot.events.minecraft.PlayerLeave;
@@ -34,6 +35,7 @@ public final class HugeboxesBot extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new MinecraftChat(), this);
         getServer().getPluginManager().registerEvents(new PlayerLeave(), this);
         getServer().getPluginManager().registerEvents(new PlayerJoin(), this);
+        getServer().getPluginManager().registerEvents(new DeathEvent(), this);
 
     }
 
